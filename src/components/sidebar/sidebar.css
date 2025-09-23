@@ -1,0 +1,31 @@
+.sidebarContainer {
+    width: 20%;
+    height: 100vh;
+    background-color: aquamarine
+}
+
+.sidebarHeading {
+    margin-left: 25px;
+    background-color: aquamarine;
+}
+
+.sidebarOl {
+    padding: 0;
+    margin-left: 2px;
+    margin: 0;
+    height: 25px;
+    list-style-type: none;
+}
+
+.sidebarli {
+    width: 100%;
+    height: 25px;
+    color: grey;
+    padding-left: 25px;
+}
+
+.sidebarli:hover {
+    background-color: rgb(221, 219, 219);
+    width: 100%;
+    cursor: pointer;
+}
