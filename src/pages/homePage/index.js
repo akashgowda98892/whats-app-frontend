@@ -7,14 +7,15 @@ import { useClerk, useUser } from '@clerk/clerk-react'
 const HomePage = () => {
     const { user } = useUser()
     const userName = user.firstName
-    console.log(user)
+    // console.log(user)
 
     const [selectedUser, setSelectedUser] = useState(null)
+    console.log(selectedUser)
     return (
         <div >
             <div >
                 <Header />
-                <div style={{ display: 'flex', flexDirection: 'row' }}>
+                <div style={{ display: 'flex', flexDirection: 'row', height: "100vh", position: 'fixed' }}>
                     <SideBar currentUser={userName} onSelect={setSelectedUser} />
                     <Content currentUser={userName} selectedUser={selectedUser} />
                 </div>

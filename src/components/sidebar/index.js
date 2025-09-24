@@ -1,11 +1,11 @@
 import React from 'react'
 import "../sidebar/sidebar.css"
 
-const SideBar = ({ currentUser, onSelect }) => {
+const SideBar = ({ onSelect }) => {
 
-    console.log(currentUser)
+    // console.log(currentUser)
     const contacts = ["Akash Gowda D H", "Abhi Gowda Ar", "Anil Gowda B"]
-
+    const currentUser = "Abhi Gowda Ar"
     const avaibaleContacts = contacts.filter((c) => c != currentUser)
 
     console.log(avaibaleContacts)
